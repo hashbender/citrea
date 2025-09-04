@@ -2,8 +2,8 @@ name: Release
 
 on:
   push:
-    tags:
-      - "v*.*.*"
+    branches:
+      - main
 
 env:
   EXPECTED_BITCOIN_DA_ID: ${{ vars.EXPECTED_BITCOIN_DA_ID }}
