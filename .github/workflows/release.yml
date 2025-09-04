@@ -27,6 +27,7 @@ jobs:
           curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
           rustup install 1.79.0
           rustup default 1.79.0
+          rustup update 1.79.0
 
       - name: Install Cargo Binstall
         run: |
