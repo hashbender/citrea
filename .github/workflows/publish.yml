@@ -28,7 +28,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   build-and-push:
-    runs-on: tenki-standard-autoscale
+    runs-on: ubuntu-latest
     environment: ${{ inputs.environment }}
 
     steps:
