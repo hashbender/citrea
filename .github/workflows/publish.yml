@@ -43,7 +43,7 @@ jobs:
         RELEASE="${{ github.event.inputs.release }}"
         PLATFORM="linux-amd64"
         SERVICE="${{ github.event.inputs.service }}"
-        REPO="chainwayxyz/citrea"
+        REPO="hashbender/citrea"
         BINARY_NAME="citrea"
         
         BINARY_URL="https://github.com/${REPO}/releases/download/${RELEASE}/citrea-${RELEASE}-${PLATFORM}"   
