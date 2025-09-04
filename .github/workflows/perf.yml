@@ -12,7 +12,7 @@ env:
 
 jobs:
   performance-comparison:
-    runs-on: ubicloud-standard-16
+    runs-on: tenki-standard-large-plus-16c-32g
     steps:
       - uses: actions/checkout@v4
       - name: Fetch latest nightly

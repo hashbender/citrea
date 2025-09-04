@@ -21,7 +21,7 @@ concurrency:
 jobs:
   prepare:
     timeout-minutes: 45
-    runs-on: ubicloud-standard-4
+    runs-on: tenki-standard-large-plus-16c-32g
     steps:
       - uses: actions/checkout@v4
       - run: mkdir artifacts
@@ -56,7 +56,7 @@ jobs:
 
     needs: prepare
     name: run
-    runs-on: ubicloud-standard-8
+    runs-on: tenki-standard-large-plus-16c-32g
     permissions:
       issues: write
     steps:
