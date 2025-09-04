@@ -10,7 +10,6 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-
   linux_amd64_binary_extraction:
     runs-on: tenki-standard-autoscale
     steps:
