@@ -11,7 +11,7 @@ on:
 jobs:
   validate:
     name: Validate PR Title
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-large-plus-16c-32g
     if: github.event.pull_request.draft == false
     steps:
       - name: Check PR Title

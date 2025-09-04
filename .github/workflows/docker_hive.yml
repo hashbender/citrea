@@ -21,7 +21,7 @@ jobs:
   docker:
     timeout-minutes: 120
     name: Build and publish Docker image
-    runs-on: ubicloud-standard-16
+    runs-on: tenki-standard-large-plus-16c-32g
     steps:
       - uses: actions/checkout@v4
       - name: Docker Setup Buildx
