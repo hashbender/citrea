@@ -11,7 +11,7 @@ env:
 
 jobs:
   linux_amd64_binary_extraction:
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-large-plus-16c-32g
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -56,7 +56,7 @@ jobs:
 
   release:
     needs: [ linux_amd64_binary_extraction]
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-large-plus-16c-32g
     steps:
       - name: Download linux-amd64 Binary
         uses: actions/download-artifact@v4
