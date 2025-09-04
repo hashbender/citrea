@@ -32,7 +32,7 @@ jobs:
       - name: Install Cargo Binstall
         run: |
           source $HOME/.cargo/env
-          cargo install --version 1.7.0 cargo-binstall
+          cargo install --locked --version 1.7.0 cargo-binstall
 
       - name: Install cargo-risczero
         run: |
